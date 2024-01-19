@@ -1,0 +1,30 @@
+.bear-header {
+    padding: 75px 40px;
+    background: transparent;
+    .header-container {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        .logo-image {
+            width: 186px;
+            height: 58px;
+            mix-blend-mode: lighten;
+            position: absolute;
+            left:0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .category-wrapper {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            .category {
+                font-size: 16px;
+                color: #fff;
+                padding: 0 24px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

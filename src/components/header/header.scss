@@ -1,0 +1,126 @@
+.header {
+    height: 119px;
+    padding: 30px;
+    background: #272727;
+    .header-container {
+        display: flex;
+        .logo-image {
+            width: 186px;
+            height: 58px;
+        }
+        .category-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            .category-menu {
+                display: flex;
+                .category {
+                    font-size: 16px;
+                    color: #fff;
+                    padding: 0 24px;
+                    margin-bottom: 0;
+                }
+            }
+            .road-map {
+                background: #292929;
+                color: #fff;
+                font-size: 17px;
+                padding: 13px 45px;
+                border: 1px solid #fff;
+                margin-left: 135px;
+            }
+            .hamburger {
+                display: none;
+            }
+        }
+    }
+    .side-nav {
+        width: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        .header-container {
+            .category-wrapper {
+                margin: 0 ;
+                width: 100%;
+                .road-map {
+                    margin-left: auto;
+                    padding: 13px 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        background: #181818;
+        .header-container {
+            .category-wrapper {
+                .category-menu {
+                    display: none;
+                }
+                .road-map {
+                    margin-left: auto;
+                }
+                .hamburger {
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+    .side-nav {
+        display: block;
+        height: 100%;
+        width: 460px !important;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        opacity: 0.95;
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #fff;
+            font-size: 50px;
+        }
+        .side-category {
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            padding: 15px;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        padding: 30px 0px;
+        .header-container {
+            .category-wrapper {
+                .road-map {
+                    padding: 13px 15px;
+                }
+            }
+        }
+        .side-nav {
+            width: 100% !important;
+        }
+    }
+}

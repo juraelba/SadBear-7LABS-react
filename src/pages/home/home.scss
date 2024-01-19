@@ -1,0 +1,258 @@
+.homepage {
+    .title-section {
+        background-image: url('../../image/background.png');
+        background-color: #272727;
+        height: 1015px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+        .title {
+            font-size: 80px;
+            letter-spacing: 0.2px;
+            color: #BFBFBF;
+            padding-top: 47px;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 20px;
+            color: #BFBFBF;
+        }
+    }
+    .sad-bears-section {
+        background: #181818;
+        padding: 100px 0;
+        text-align: center;
+        .title {
+            font-size: 52px;
+            color: #fff;
+            margin-bottom: 27px;
+        }
+        .description {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 80px;
+        }
+        .collect-button {
+            font-size: 17px;
+            color: #fff;
+            padding: 20px 40px;
+            border: 1px solid #fff;
+            background: #181818;
+            margin-bottom: 50px;
+        }
+        .sad-bears-wrapper {
+            background-color: #181818;
+            height: 668px;
+            text-align: center;
+            position: relative;
+            .single-bear {
+                display: none;
+            }
+            .join-link {
+                position: absolute;
+                right: 150px;
+                bottom: 150px;
+                .join-title {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 23px;
+                    .join-title-content {
+                        margin-left: 10px;
+                        font-size: 20px;
+                        color: #fff;
+                        margin-bottom: 0;
+                    }
+                }
+                .join-description {
+                    padding-left: 10px;
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 0;
+                    text-align: left;
+                }
+                .margin-b-45 {
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+    .bulls-section {
+        background: #181818;
+        padding: 100px 0;
+        text-align: center;
+        .title {
+            font-size: 52px;
+            color: #fff;
+            margin-bottom: 27px;
+        }
+        .description {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 80px;
+        }
+        .image-container {
+            background: #272727;
+            border-radius: 10px;
+            box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+            width: 775px;
+            height: 778px;
+            margin: auto;
+            text-align: center;
+            padding: 50px;
+            .image-title {
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 30px;
+            }
+            .image-description {
+                font-size: 16px;
+                color: #5C5C5C;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .tnx-section {
+        background: #272727;
+        padding: 60px 0;
+        text-align: center;
+        .title {
+            font-size: 46px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+        .image-filter {
+            filter: grayscale(1);
+            border-radius: 10px;
+        }
+        .image-title {
+            font-size: 24px;
+            color: #fff;
+            margin: 10px 0;
+        }
+    }
+    .road-map-section {
+        background: #181818;
+        padding: 100px 0;
+        text-align: center;
+        .title {
+            font-size: 46px;
+            color: #fff;
+            margin-bottom: 60px;
+        }
+        .description {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 50px;
+            line-height: 57px;
+            letter-spacing: 0.2px;
+            padding: 0 265px;
+            text-align: justify;
+        }
+    }
+    .connect-section {
+        background: #181818;
+        padding: 100px 0;
+        text-align: center;
+        .title {
+            font-size: 54px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .homepage {
+        .sad-bears-section {
+            .sad-bears-wrapper {
+                .join-link {
+                    right: 55px;
+                    bottom: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .homepage {
+        .title-section {
+            background-image: none;
+            background-color: #181818;
+            height: 500px;
+            text-align: center;
+            padding: 0 60px;
+            .title {
+                color: #fff;
+            }
+            .description {
+                color: #fff;
+            }
+        }
+        .sad-bears-section {
+            .collect-button {
+                display: none;
+            }
+            .sad-bears {
+                display: none;
+            }
+            .single-bear {
+                display: block !important;
+                margin: auto;
+            }
+            .sad-bears-wrapper {
+                background-image: none;
+                background-color: #181818;
+                margin: auto;
+                height: auto;
+                .join-link {
+                    position: unset;
+                    width: 200px;
+                    margin: auto;
+                }
+            }
+        }
+        .bulls-section {
+            .description {
+                margin-bottom: 50px;
+            }
+            .image-container {
+                background: #181818;
+                border-radius: none;
+                box-shadow: none;
+                width: auto;
+                height: auto;
+                padding: 20px;
+            }
+        }
+        .tnx-section {
+            background: #181818;
+            .image-content {
+                padding: 20px 50px;
+                margin-bottom: 100px;
+            }
+        }
+        .road-map-section {
+            .description {
+                padding: 50px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+    .homepage {
+        .road-map-section {
+            .description {
+                padding: 10px;
+            }
+        }
+    }
+}

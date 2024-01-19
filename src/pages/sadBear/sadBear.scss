@@ -1,0 +1,420 @@
+.sad-bear {
+    background-image: url('../../image/bear-background.png');
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100px;
+    overflow: hidden;
+    .bottom-background {
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        background-image: url('../../image/bear6.png');
+        background-position: bottom 0 right -100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 1300px;
+        z-index: 0;
+    }
+
+    .main-section {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        position: relative;
+
+        .bear-image-section {
+            margin-left: auto;
+            width: 70%;
+            height: 950px;
+            background-image: url('../../image/bear-gif.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .road-map-title {
+            font-family: 'Hiruko';
+            font-size: 50px;
+            color: #fff;
+        }
+        .second-cloud-wrapper {
+            .second-cloud {
+                z-index: 0;
+                top: 160px;
+            }
+            .road-map-content-wrapper {
+                width: 70%;
+                margin-left: auto;
+                padding: 20px 100px;
+                text-align: center;
+                position: relative;
+                z-index: 9;
+                .road-map-mobile-title {
+                    display: none;
+                }
+                .road-map-content {
+                    font-size: 36px;
+                    color: #fff;
+                    text-align: justify;
+                    margin-bottom: 100px;
+                }
+            }
+        }
+        .main-title {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            text-align: left;
+            width: 510px;
+            .title {
+                font-family: 'Hiruko';
+                font-size: 90px;
+                color: #fff;
+                margin-bottom: 0;
+            }
+            .description {
+                font-family: 'Hiruko';
+                font-size: 46px;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+            .content {
+                font-family: 'Roboto';
+                font-size: 18px;
+                color: #fff;
+            }
+            .connect-button {
+                font-family: 'Hiruko';
+                font-size: 34px;
+                color: #00FFFF;
+                padding: 10px;
+                border-radius: 2px;
+                background: radial-gradient(92.05% 92.05% at 50% 64.77%, rgba(16, 134, 141, 0.5) 0%, rgba(196, 196, 196, 0) 100%);
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                border-image: linear-gradient(to bottom, #fff, #00FFFF) 1 round;
+            }
+            .counter-placeholder {
+                font-family: 'Hiruko';
+                font-size: 41px;
+                color: #00FFFF;
+                margin-top: 10px;
+            }
+            .title-arrow {
+                display: block;
+                margin-top: 150px;
+                margin-left: 120px;
+            }
+        }
+    }
+
+    .connect-section {
+        height: 667px;
+        border-radius: 0 49px 49px 0;
+        background: rgba(196, 196, 196, 0.5);
+        margin-right: 60px;
+        position: relative;
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        .midline {
+            mix-blend-mode: normal;
+            border: 10px solid rgba(255, 255, 255, 0.75);
+            border-radius: 50px;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            position: absolute;
+            top: 82px;
+            right: 44px;
+            height: 536px;
+            width: 100%;
+            pointer-events: none;
+        }
+        .short-arrow {
+            position: absolute;
+            bottom: 0;
+            right: 355px;
+            transform: translateY(76%);
+        }
+        .connect-bear {
+            width: 661px;
+            height: 661px;
+            object-fit: contain;
+            z-index: 1;
+        }
+        .connect-link {
+            text-align: center;
+            width: 100%;
+            .connect-link-title {
+                font-family: 'Hiruko';
+                font-size: 60px;
+                color: #fff;
+                margin-bottom: 100px;
+            }
+            .connect-group {
+                margin: auto;
+            }
+            .link-icon {
+                width: 250px;
+                padding: 0 30px;
+            }
+        }
+    }
+
+    .rarities-mobile-title {
+        display: none;
+    }
+
+    .rarities-section {
+        height: 1201px;
+        border-radius: 49px 0 0 49px;
+        background: rgba(196, 196, 196, 0.5);
+        margin-left: 177px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        z-index: 9;
+        .midline {
+            mix-blend-mode: normal;
+            border: 10px solid rgba(255, 255, 255, 0.75);
+            border-radius: 50px;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            position: absolute;
+            top: 176px;
+            left: 83px;
+            height: 983px;
+            width: 100%;
+        }
+        .rarities-title {
+            font-family: 'Hiruko';
+            font-size: 60px;
+            color: #fff;
+            position: absolute;
+            top: 65px;
+            right: 325px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 1420px) {
+    .sad-bear {
+        .main-section {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        .connect-section {
+            .connect-bear {
+                width: 550px;
+                height: 550px;
+                object-fit: contain;
+                z-index: 1;
+            }
+            .connect-link {
+                .link-icon {
+                    width: 200px;
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .sad-bear {
+        .main-section {
+            margin-top: 0;
+        }
+        .connect-section {
+            .connect-bear {
+                display: none;
+            }
+            .connect-link {
+                .link-icon {
+                    width: 250px;
+                    padding: 0 30px;
+                }
+            }
+        }
+        .rarities-section {
+            height: 1000px;
+            .midline {
+                top: 176px;
+                left: 83px;
+                height: 782px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+    .sad-bear {
+        .main-section {
+            margin-top: 0;
+            margin-bottom: 50px;
+    
+            .bear-image-section {
+                height: 750px;
+            }
+            .second-cloud-wrapper {
+                .road-map-content-wrapper {
+                    padding: 20px 50px;
+                    .road-map-content {
+                        font-size: 30px;
+                        margin-bottom: 50px;
+                    }
+                    .roadmap-arrow {
+                        height: 300px;
+                    }
+                }
+            }
+            .main-title {
+                top: 50px;
+                left: 50px;
+                width: 400px;
+                .description {
+                    line-height: 60px;
+                }
+                .connect-button {
+                    font-size: 30px;
+                }
+                .counter-placeholder {
+                    font-size: 36px;
+                }
+                .title-arrow {
+                    height: 300px;
+                }
+            }
+        }
+        .rarities-section {
+            height: 800px;
+            margin-left: 100px;
+            .midline {
+                top: 176px;
+                left: 83px;
+                height: 582px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sad-bear {
+        .main-section {
+            margin-bottom: -10px;
+            .bear-image-section {
+                background-position: bottom 0 right 0;
+            }
+            .road-map-title {
+                display: none;
+            }
+            .second-cloud-wrapper {
+                .road-map-content-wrapper {
+                    width: 100%;
+                    padding: 20px 100px 0 100px;
+                    position: relative;
+                    .road-map-mobile-title {
+                        display: block;
+                        font-family: 'Hiruko';
+                        font-size: 50px;
+                        color: #fff;
+                    }
+                    .road-map-content {
+                        font-size: 18px;
+                        margin-bottom: 0;
+                    }
+                    .roadmap-arrow {
+                        height: 160px;
+                        margin-left: 250px;
+                    }
+                }
+            }
+            .main-title {
+                top: 0;
+                left: 100px;
+                .title {
+                    line-height: 80px;
+                    margin-bottom: 20px;
+                }
+                .connect-button {
+                    font-size: 20px;
+                    margin-top: 100px;
+                }
+                .counter-placeholder {
+                    font-size: 25px;
+                }
+                .title-arrow {
+                    display: none;
+                }
+            }
+        }
+        .connect-section {
+            padding: 0;
+            margin-bottom: 200px;
+            margin-right: 50px;
+            .connect-link {
+                .connect-link-title {
+                    font-size: 48px;
+                }
+                .link-icon {
+                    width: 200px;
+                    padding: 0 30px;
+                }
+            }
+        }
+        .rarities-mobile-title {
+            display: block;
+            text-align: center;
+            font-family: 'Hiruko';
+            font-size: 48px;
+            color: #fff;
+        }
+        .rarities-section {
+            height: 500px;
+            margin-left: 50px;
+            .midline {
+                top: 30px;
+                left: 50px;
+                height: 440px
+            }
+            .rarities-title {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .sad-bear {
+        .main-section {
+            .second-cloud-wrapper {
+                .road-map-content-wrapper {
+                    padding: 20px 50px 0 50px;
+                    .roadmap-arrow {
+                        height: 160px;
+                        margin-left: 150px;
+                    }
+                }
+            }
+            .main-title {
+                left: 50px;
+                width: 370px;
+            }
+        }
+        .connect-section {
+            .connect-link {
+                .link-icon {
+                    width: 150px;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}
